@@ -1,14 +1,16 @@
 const employers = ['Alex', '', 'ludmila', 'Viktor', '', 'oleg', 'iNna', 'Ivan', 'Alex', 'Olga', ' Ann'];
 
-
-let employersNames = employers.filter(name => name.length > 0 && name.length != "");
-employersNames = employersNames.map((name) => name.toLowerCase().trim());
-
 /*
+let employersNames = employers.filter(name => name.length > 0)
+employersNames = employersNames.map((item) => item.toLowerCase().trim());
+
+console.log('employersNames: ', employersNames);
+*/
+
 const employersNames = (arr) => {
     employersLong = arr.filter(name => name.length > 0 && name.length != "");
     return employersLong.map(name => name.toLowerCase().trim());
-}*/
+}
 
 const sponsors = {
     cash: [40000, 5000, 30400, 12000],
@@ -18,8 +20,7 @@ const sponsors = {
 
 const {cash, eu, rus} = sponsors;
 
-const calcCash = (cash = 0) => cash.reduce((a, b) => a + b);
-const money = calcCash(sponsors.cash);
+const employersNames = employers.filter(name => name.length > 0).map((item) => item.toLowerCase().trim());
 
 const sumSponsors = [...eu, ...rus, 'unexpected sponsor']; 
 

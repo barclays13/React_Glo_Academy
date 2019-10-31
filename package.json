@@ -1,0 +1,26 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "homework.js",
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "webpack-cli": "^3.3.10",
+    "webpack": "^4.41.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barclays13/React_Glo_Academy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barclays13/React_Glo_Academy/issues"
+  },
+  "homepage": "https://github.com/barclays13/React_Glo_Academy#readme"
+}
