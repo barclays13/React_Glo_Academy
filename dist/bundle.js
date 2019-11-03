@@ -171,7 +171,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var MakeBusiness =
 /*#__PURE__*/
 function () {
-  function MakeBusiness(owner, director, cash, emp) {
+  function MakeBusiness(_ref) {
+    var _ref$owner = _ref.owner,
+        owner = _ref$owner === void 0 ? 'Kirill' : _ref$owner,
+        _ref$director = _ref.director,
+        director = _ref$director === void 0 ? "Victor" : _ref$director,
+        _ref$cash = _ref.cash,
+        cash = _ref$cash === void 0 ? 0 : _ref$cash,
+        _ref$emp = _ref.emp,
+        emp = _ref$emp === void 0 ? ['ludmila', 'viktor'] : _ref$emp;
+
     _classCallCheck(this, MakeBusiness);
 
     //owner = 'Samen',director="Victor",cash = 0,emp = ['ludmila', 'viktor']}
@@ -191,7 +200,12 @@ function () {
   return MakeBusiness;
 }();
 
-var busines = new MakeBusiness('Sam', "Victor", _module_sponsors__WEBPACK_IMPORTED_MODULE_0__["money"], _module_employersNames__WEBPACK_IMPORTED_MODULE_1__["employersNames"]);
+var busines = new MakeBusiness({
+  director: "Victor",
+  owner: 'Sam',
+  emp: _module_employersNames__WEBPACK_IMPORTED_MODULE_1__["employersNames"],
+  cash: _module_sponsors__WEBPACK_IMPORTED_MODULE_0__["money"]
+});
 busines.outputInfo();
 
 /***/ })

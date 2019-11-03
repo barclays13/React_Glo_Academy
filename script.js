@@ -1,8 +1,9 @@
 import {eu, money, sumSponsors} from './module/sponsors';
 import {employersNames} from './module/employersNames';
 
+
 class MakeBusiness { 
-    constructor(owner ,director,cash, emp){ //owner = 'Samen',director="Victor",cash = 0,emp = ['ludmila', 'viktor']}
+    constructor({owner = 'Kirill',director="Victor",cash = 0,emp = ['ludmila', 'viktor']}){ //owner = 'Samen',director="Victor",cash = 0,emp = ['ludmila', 'viktor']}
     this.owner = owner;
     this.director= director;
     this.cash = cash;
@@ -16,5 +17,6 @@ ${sumSponsors}
 Note. Be careful with ${eu[0]}. It's a huge risk.`)}
 }
 
-const busines = new MakeBusiness('Sam',"Victor",money,employersNames);
+const busines = new MakeBusiness({director: "Victor", owner:'Sam', emp: employersNames, cash: money});
 busines.outputInfo();
+
