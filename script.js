@@ -11,10 +11,7 @@ class MakeBusiness {
     }
 
     outputInfo() {
-        console.log(`We have a business. Owner: ${this.owner}, director: ${this.director}. Our budget: ${this.cash}. And our employers: ${this.emp}
-And we have a sponsors: 
-${sumSponsors}
-Note. Be careful with ${eu[0]}. It's a huge risk.`)}
+        console.log(`We have a business. Owner: ${this.owner}, director: ${this.director}. Our budget: ${this.cash}. And our employers: ${this.emp}\nAnd we have a sponsors:\n${sumSponsors} \nNote. Be careful with ${eu[0]}. It's a huge risk.`)}
 }
 
 const busines = new MakeBusiness({director: "Victor", owner:'Sam', emp: employersNames, cash: money});

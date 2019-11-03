@@ -193,7 +193,7 @@ function () {
   _createClass(MakeBusiness, [{
     key: "outputInfo",
     value: function outputInfo() {
-      console.log("We have a business. Owner: ".concat(this.owner, ", director: ").concat(this.director, ". Our budget: ").concat(this.cash, ". And our employers: ").concat(this.emp, "\nAnd we have a sponsors: \n").concat(_module_sponsors__WEBPACK_IMPORTED_MODULE_0__["sumSponsors"], "\nNote. Be careful with ").concat(_module_sponsors__WEBPACK_IMPORTED_MODULE_0__["eu"][0], ". It's a huge risk."));
+      console.log("We have a business. Owner: ".concat(this.owner, ", director: ").concat(this.director, ". Our budget: ").concat(this.cash, ". And our employers: ").concat(this.emp, "\nAnd we have a sponsors:\n").concat(_module_sponsors__WEBPACK_IMPORTED_MODULE_0__["sumSponsors"], " \nNote. Be careful with ").concat(_module_sponsors__WEBPACK_IMPORTED_MODULE_0__["eu"][0], ". It's a huge risk."));
     }
   }]);
 
